@@ -1,4 +1,6 @@
 --A file containing definition of common objects
+local dsep, tsep, sub,exed, ign = package.config:match("^(.-)\n(.-)\n(.-)\n(.-)\n(.-)\n$")
+package.path = package.path  .. tsep .. "loop-3.0" .. dsep .. "lua" .. dsep .. sub .. ".lua"
 oop = require "loop.simple"
 
 local def = {}
